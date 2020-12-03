@@ -238,8 +238,8 @@
       $(document).ready(function () {
         $('#dog-form').submit(function (event) {
           event.preventDefault();
-          let edadPerro = $('#dog-age').val();
-          let res = Math.log(edadPerro) * 16 + 31;
+          let dogAge = $('#dog-age').val();
+          let res = Math.log(dogAge) * 16 + 31;
           console.log(res);
           $('#dog-age-in-human').val(res);
         });
@@ -282,6 +282,33 @@
             />
           </div>
         </div>
+        <span id="card-header">How it works:</span>
+        <div class="row-1">
+          Example: <br />
+          We get the Natural Logaritm of the dog age multiplied by 16.<br />
+          Math.log(dogAge) * 16 + 31 <br />
+          And add 31.
+        </div>
+
+        <span id="card-header">More info:</span>
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.cell.com/cell-systems/fulltext/S2405-4712(20)30203-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405471220302039%3Fshowall%3Dtrue"
+              >Quantitative Translation of Dog-to-Human Aging by Conserved
+              Remodeling of the DNA Methylome</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.nytimes.com/es/2020/11/13/espanol/edad-de-los-perros.html"
+              >Link 2</a
+            >
+          </li>
+        </ul>
       </form>
     </div>
   </body>
